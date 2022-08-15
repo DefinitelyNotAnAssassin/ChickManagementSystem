@@ -20,12 +20,6 @@ class Reservations(models.Model):
     shipping_fee = models.IntegerField()
     amount = models.IntegerField() 
 
-#The design of this particular model is not yet finalized
-class Stocks(models.Model):
-    hatch = models.OneToOneField(HatchingBatch, on_delete=models.CASCADE, related_name="stock")
-    
-
-
     
 
     
