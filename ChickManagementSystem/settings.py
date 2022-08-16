@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'django_tables2',
+    'django_filters',
     'UserInterface.apps.UserinterfaceConfig',
     'Models.apps.ModelsConfig',
     'django.contrib.admin',

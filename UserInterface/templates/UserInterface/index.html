@@ -1,0 +1,48 @@
+ {% extends 'UserInterface/base.html' %}
+
+ 
+
+ {% block content %}
+
+ <form action="/" class="form-control">
+    {{filter.form}}
+    <button class="btn btn-dark">Search</button>
+ </form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Hatch Batch</td>
+            <td>Date</td>
+            <td>RIR</td>
+            <td>BPR</td>
+            <td>BA</td>
+            <td>Total in Pesos</td>
+            <td>Remarks</td>
+
+        </tr>
+
+
+
+    </thead>
+
+    <tbody>
+        {% for row in table.rows %}
+            <tr>
+                {% for column, cell in row.items %}
+                   <td>{{cell}}</td> 
+
+                {% endfor %}
+
+            </tr>
+        {% endfor %}
+    </tbody>
+
+
+</table>
+
+ {% endblock %}
+
+
+ 
