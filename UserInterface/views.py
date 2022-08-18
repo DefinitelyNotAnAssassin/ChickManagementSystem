@@ -20,4 +20,9 @@ def index(request):
         'filter': filtr
 
     }
+
+
+
     return render(request, "UserInterface/index.html", context=items)
+def batch_date(request, date):
+    return render(request, 'UserInterface/hatch_batch.html')

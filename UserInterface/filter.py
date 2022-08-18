@@ -6,4 +6,4 @@ class ReservationFilter(filter.FilterSet):
 
     class Meta:
         model = Reservation
-        fields = ['name', 'date']
+        fields = ['name', 'date', 'hatch__hatch_date']
